@@ -1,0 +1,2 @@
+0 8 * * * root python3 -u /bin/data_collections.py	
+
