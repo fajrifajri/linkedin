@@ -1,0 +1,11 @@
+# curl "http://localhost:8110/jobs?location=all"
+# http://u.fajri.io:8110/jobs?module=location&target=all
+- job_name: linkedin 
+  scrape_interval: 1m
+  scrape_timeout: 30s
+  metrics_path: /jobs
+  params:
+    location: ['all']
+  static_configs:
+    - targets:
+      - u.fajri.io:8110
